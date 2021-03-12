@@ -12,7 +12,7 @@ public interface INodeJS {
     @FormUrlEncoded
     Observable<Atributte> savePost(@Field("id_player") int id_player,
                                    @Field("id_sensor_endpoint") int id_sensor_endpoint,
-                                   @Field("data_changes")  ArrayList<Integer> data_changes,
+                                   @Field("data_changes")  String data_changes,
                                    @Field("watch_parameters")String  watch_parameters);
 /*    fun registerAttribute(@Field("id_player") id_player: Int,
                           @Field("nameat") nameat: String,

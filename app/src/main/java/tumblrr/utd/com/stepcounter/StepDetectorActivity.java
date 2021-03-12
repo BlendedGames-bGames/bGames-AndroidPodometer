@@ -276,10 +276,8 @@ public class StepDetectorActivity extends AppCompatActivity {
         final int id_player = globalVariable.getId_player();
 
         if(newStepCounter != 0){
-            ArrayList<Integer> counterArray = new ArrayList<Integer>();
-            counterArray.add(newStepCounter);
+            String counterArray = String.valueOf(newStepCounter);
 
-            Integer[] finalArray = counterArray.toArray(new Integer[0]);
             String watch_params_final = "step";
 
             APIREST.savePost(id_player,22,counterArray,watch_params_final)
